@@ -16,7 +16,6 @@
             <div class="col-md-6">
                 <div class="product-block">
                     <h3>{{ $product -> name }}</h3><hr>
-                    <hr>
                     <div class="product-info panel">
                             <p>{{ $product -> description }}</p>
                             <h3>
@@ -31,8 +30,8 @@
         </div>
 
 
-
-        <p><a href="#" class="btn btn-secondary">Regresar</a></p>
+        <hr>
+        <p><a href="{{ route('home')}}" class="btn btn-secondary btn-block"> Regresar </a></p>
 
     </div>
 

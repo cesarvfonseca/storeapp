@@ -1,18 +1,25 @@
 body{
-    background: rgb(184, 184, 184);
+    background: rgb(255, 231, 179);
+    font-family: 'Amatic SC', cursive;
+    /* font-family: 'Hammersmith One', sans-serif; */
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Hammersmith One', sans-serif;
 }
 
 /* NAVBAR */
 .main-tittle
 {
-    color: rgb(250, 225, 0) !important;
+    color: rgb(139, 91, 0) !important;
+    font-family: 'Hammersmith One', sans-serif;
     font-size: 26px;
 }
 
 /* FOOTER */
 footer
 {
-    background: rgb(229, 255, 0);
+    background: rgb(139, 91, 0);
     text-align: center;
 }
 
@@ -28,14 +35,15 @@ ul.redes li
 
 ul.redes li a
 {
-    color: rgb(0, 153, 255);
+    color: rgb(255, 255, 255);
 }
 
 .avatar
 {
-    border: 2px solid green;
+    border: 2px solid rgb(255, 196, 86);
     border-radius: 50%;
     float: left;
+    margin-right: 20px;
     height: 100px;
     width: 100px;
 }
@@ -78,5 +86,16 @@ transition: all 0.3s ease-in-out;
     background: white;
     border-radius: 1em;
     padding: 1em;
-    width: 50%;
 }
+
+/* SLIDER */
+.navbar
+{
+    margin-bottom: 0;
+}
+
+/* .carousel
+{
+    height: 10%;
+    
+} */

@@ -1,11 +1,11 @@
-body{
+body
+{
     background: rgb(255, 231, 179);
-    font-family: 'Amatic SC', cursive;
-    /* font-family: 'Hammersmith One', sans-serif; */
+    font-family: 'Molengo', sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Hammersmith One', sans-serif;
+    font-family: 'Chewy', cursive;
 }
 
 /* NAVBAR */
@@ -94,8 +94,16 @@ transition: all 0.3s ease-in-out;
     margin-bottom: 0;
 }
 
-/* .carousel
+/**Carrito de compras**/
+.table-cart
 {
-    height: 10%;
-    
-} */
+    background:whitesmoke;
+    border-radius: 1em;
+    margin-bottom: 30px;
+    padding: 1em;
+}
+
+.table-cart img
+{
+    width: 60px;
+}

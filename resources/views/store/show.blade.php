@@ -22,7 +22,9 @@
                                 <span class="label label-success">Precio: ${{ number_format($product -> price, 2) }}</span>
                             </h3>
                             <p>
-                                <a href="" class="btn btn-success btn-block">Añadir al carrito</a>
+                                <a href="{{ route('cart-add', $product -> slug) }}" class="btn btn-success btn-block">
+                                    Añadir al carrito
+                                </a>
                             </p>
                     </div>
                 </div>

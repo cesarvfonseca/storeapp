@@ -13,6 +13,11 @@
 
 // Route::get('/', 'StoreController@index');
 
+/**Inyectar dependencia en base el envio del id de producto por metodo get*/
+Route::bind('product',function($slug){
+    return App\Products::where('slug',$slug)->first();
+});
+
 Route::get('/', [
     'as' => 'home',
     'uses' => 'StoreController@index'
@@ -23,3 +28,28 @@ Route::get('product/{slug}', [
     'uses' => 'StoreController@show'
 ]);
 
+/***CARRITO */
+Route::get('cart/show',[
+    'as' => 'cart-show',
+    'uses' => 'CartController@show'
+]);
+
+Route::get('cart/add/{product}',[
+    'as' => 'cart-add',
+    'uses' => 'CartController@add'
+]);
+
+Route::get('cart/delete/{product}',[
+    'as' => 'cart-delete',
+    'uses' => 'CartController@delete'
+]);
+
+Route::get('cart/trash',[
+    'as' => 'cart-trash',
+    'uses' => 'CartController@trash'
+]);
+
+Route::get('cart/update/{product}/{qty}',[
+    'as' => 'cart-update',
+    'uses' => 'CartController@update'
+]);
